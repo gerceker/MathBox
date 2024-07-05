@@ -1,0 +1,12 @@
+{
+  "name": "mathbox",
+  "version": "0.0.1",
+  "main": "./build/index.js",
+  "scripts": {
+    "tsc": "tsc ./index.ts --outDir ./build -w",
+    "nodemon": "nodemon ./build/index.js"
+  },
+  "author": "emirhan@scihook.org",
+  "license": "Apache-2.0",
+  "description": "Math library for Node.js"
+}
