@@ -47,7 +47,7 @@ function main() {
             switch (_c.label) {
                 case 0:
                     _b = (_a = console).log;
-                    return [4 /*yield*/, (0, src_1.multiplyComplexNumbers)([complex_1, complex_2, complex_3])];
+                    return [4 /*yield*/, (0, src_1.sumComplexNumbers)([complex_1, complex_2, complex_3])];
                 case 1:
                     _b.apply(_a, [_c.sent()]);
                     return [2 /*return*/];
