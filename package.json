@@ -10,7 +10,6 @@
   "license": "Apache-2.0",
   "description": "Math library for Node.js",
   "dependencies": {
-    "numberloop": "^1.0.4",
     "syncforeachloop": "^1.0.2"
   }
 }

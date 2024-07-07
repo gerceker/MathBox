@@ -37,10 +37,11 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var src_1 = require("./src");
-var test = new src_1.ArithmeticSequence({ difference: 401, length: 5, start: -4 });
+var test = new src_1.ArithmeticSequence({ difference: 1, length: 1, start: 1 });
 function main() {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
+            console.log();
             return [2 /*return*/];
         });
     });

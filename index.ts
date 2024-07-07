@@ -1,8 +1,9 @@
 import {ArithmeticSequence} from './src';
 
-var test = new ArithmeticSequence({difference:401,length:5,start:-4})
+var test = new ArithmeticSequence({difference:1,length:1,start:1})
 
 async function main() {
+    console.log()
 }
 
 main();
