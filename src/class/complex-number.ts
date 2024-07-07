@@ -14,28 +14,25 @@ export class ComplexNumber{
         return `${this.real} + ${this.imaginer}i`;
     }
 
-    absolute(): number{
+    getAbsoluteValue(): number{
         let absolute_value = Math.sqrt((this.real ** 2) + (this.imaginer ** 2));
         return absolute_value;
     }
 
-    conjugate() : ComplexNumber {
-        return new ComplexNumber({
-            real:this.real,
-            imaginer:-this.imaginer
-        });
+    conjugate() : void {
+        this.imaginer=-this.imaginer       
     }
     
-    multiplyWith(number:ComplexNumber){
+    multiplyWith(number:ComplexNumber):void{
         var real = (number.real * this.real) - (number.imaginer*this.imaginer);
-        var imaginer = (number.real*this.imaginer)+(number.imaginer*this.real);
-        return new ComplexNumber({real,imaginer});  
+        var imaginer = (number.real*this.imaginer) + (number.imaginer*this.real);
+        this.real= real;
+        this.imaginer = imaginer;
     }
 
-    sumWith(number:ComplexNumber){
-        var real = number.real+this.real;
-        var imaginer = number.imaginer+this.imaginer;
-        return new ComplexNumber({real,imaginer});
+    sumWith(number:ComplexNumber):void{
+        this.real = number.real+this.real;
+        this.imaginer = number.imaginer+this.imaginer;
     }
 
 }

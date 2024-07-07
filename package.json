@@ -8,5 +8,8 @@
   },
   "author": "emirhan@scihook.org",
   "license": "Apache-2.0",
-  "description": "Math library for Node.js"
+  "description": "Math library for Node.js",
+  "dependencies": {
+    "syncforeachloop": "^1.0.2"
+  }
 }

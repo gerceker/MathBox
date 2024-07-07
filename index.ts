@@ -1,15 +1,12 @@
-import {ComplexNumber} from './src';
+import {ComplexNumber,multiplyComplexNumbers} from './src';
 
-var imaginer_number_1 = new ComplexNumber({
-    real:3,
-    imaginer:4,
-});
+var complex_1 = new ComplexNumber({real:1,imaginer:2})
+var complex_2 = new ComplexNumber({real:6,imaginer:2})
+var complex_3 = new ComplexNumber({real:4,imaginer:3})
 
-var imaginer_number_2 = new ComplexNumber({
-    real:5,
-    imaginer:4,
-});
 
-var test = imaginer_number_1.sumWith(imaginer_number_2);
+async function main() {
+    console.log(await multiplyComplexNumbers([complex_1,complex_2,complex_3]));
+}
 
-console.log(test);
+main();
