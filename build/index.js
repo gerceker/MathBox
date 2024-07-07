@@ -37,21 +37,11 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var src_1 = require("./src");
-var complex_1 = new src_1.ComplexNumber({ real: 1, imaginer: 2 });
-var complex_2 = new src_1.ComplexNumber({ real: 6, imaginer: 2 });
-var complex_3 = new src_1.ComplexNumber({ real: 4, imaginer: 3 });
+var test = new src_1.ArithmeticSequence({ difference: 401, length: 5, start: -4 });
 function main() {
     return __awaiter(this, void 0, void 0, function () {
-        var _a, _b;
-        return __generator(this, function (_c) {
-            switch (_c.label) {
-                case 0:
-                    _b = (_a = console).log;
-                    return [4 /*yield*/, (0, src_1.sumComplexNumbers)([complex_1, complex_2, complex_3])];
-                case 1:
-                    _b.apply(_a, [_c.sent()]);
-                    return [2 /*return*/];
-            }
+        return __generator(this, function (_a) {
+            return [2 /*return*/];
         });
     });
 }

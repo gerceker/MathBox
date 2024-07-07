@@ -1,12 +1,8 @@
-import {ComplexNumber,multiplyComplexNumbers, sumComplexNumbers} from './src';
+import {ArithmeticSequence} from './src';
 
-var complex_1 = new ComplexNumber({real:1,imaginer:2})
-var complex_2 = new ComplexNumber({real:6,imaginer:2})
-var complex_3 = new ComplexNumber({real:4,imaginer:3})
-
+var test = new ArithmeticSequence({difference:401,length:5,start:-4})
 
 async function main() {
-    console.log(await sumComplexNumbers([complex_1,complex_2,complex_3]));
 }
 
 main();
